@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle System</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <!-- Login Section -->
+  <div id="login-section" class="section active">
+    <header class="app-bar">
+      <h1>Login</h1>
+    </header>
+    <main class="login-content">
+      <h2>Welcome Back!</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Log In</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- Main Page Section -->
+  <div id="main-section" class="section hidden">
+    <header class="app-bar">
+      <h1>Home Page</h1>
+    </header>
+    <main class="main-content">
+      <h2>Welcome to the Home Page!</h2>
+      <button class="btn" id="go-to-vehicle-details">Vehicle Details</button>
+    </main>
+  </div>
+
+  <!-- Vehicle Details Section -->
+  <div id="vehicle-details-section" class="section hidden">
+    <header class="app-bar">
+      <h1>Vehicle Details</h1>
+    </header>
+    <main class="main-content">
+      <h2>Select a Vehicle</h2>
+      <ul id="vehicle-list"></ul>
+    </main>
+  </div>
+
+  <!-- Vehicle Info Section -->
+  <div id="vehicle-info-section" class="section hidden">
+    <header class="app-bar">
+      <h1>Vehicle Info</h1>
+    </header>
+    <main class="main-content">
+      <h2>Details for <span id="vehicle-info-id"></span></h2>
+      <div id="tire-pressure-container"></div>
+      <p><strong>Temperature:</strong> <span id="vehicle-info-temperature"></span> °C</p>
+      <p><strong>Tire Lifetime:</strong> <span id="vehicle-info-tire-lifetime"></span> months</p>
+      <p><strong>Kilometers Run:</strong> <span id="vehicle-info-km-run"></span> km</p>
+      <button class="btn" id="back-to-vehicle-list">Back to Vehicle List</button>
+    </main>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
